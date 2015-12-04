@@ -18,9 +18,9 @@ public class AccommodationFinderServiceImpl implements AccommodationFinderServic
     @Override
     public void checkUser() throws FacebookException {
         Facebook facebook = new FacebookFactory().getInstance();
-        facebook.setOAuthAppId("139128016447758", "9ba476f2be0a3e1209302503ecde6447");
-        facebook.setOAuthAccessToken(new AccessToken("CAACEdEose0cBANKBA0VnZC15EEhSANViGda3TEdB2LGj36gdjsJZAKxKYzppZAl9xZBLTrjddXAWBOyBJuQDUmKGbAYAKSvpeZC0GQWmZA7q9pL3FjwrMFq0SDfS8A7uPK7jvfCF2UFCe4BfZC0nYsKkGyNDdEjRSI9PhZCHlFZCWYni1EXjjWgni5xpyPaCIWQ5LDPiflZBxRZAKF9kWcHqXvU"));
-        ResponseList<Post> feeds = facebook.getGroupFeed("1650659058522281"); //Housing near San Jose State University
+        facebook.setOAuthAppId("", "");
+        facebook.setOAuthAccessToken(new AccessToken(""));
+        ResponseList<Post> feeds = facebook.getGroupFeed(""); //Housing near San Jose State University
         List<String> messageLists = new ArrayList<String>();
         List<String> prices = new ArrayList<String>();
         Integer sanfernandoCount = 0, colonnadeCount = 0, lagacyCount = 0, avalon = 0, museum = 0;
